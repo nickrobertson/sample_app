@@ -8,7 +8,7 @@ RSpec.describe StaticPagesController, :type => :controller do
     it 'returns a 200 custom status code' do
       get 'home'
       expect(response.status).to eq(200)
-      expect(response.body).to include("<title>Home | #{title}</title>")
+      expect(response.body).to include("<title>#{title}</title>")
     end
   end
 
