@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe StaticPagesController, :type => :controller do
   render_views
-    let(:title) { 'Ruby on Rails Tutorial Sample App' }
+  let(:title) { 'Ruby on Rails Tutorial Sample App' }
 
   describe 'GET #home' do
     it 'returns a 200 custom status code' do
@@ -30,7 +30,7 @@ RSpec.describe StaticPagesController, :type => :controller do
 
   describe 'GET #contact' do
     it 'returns a 200 custom status code' do
-      get 'contact'
+      get contact_path
       expect(response.status).to eq(200)
       expect(response.body).to include("<title>Contact | #{title}</title>")
     end
