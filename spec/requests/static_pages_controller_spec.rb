@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe StaticPagesController, :type => :request do
+describe StaticPagesController, :type => :request do
   let(:title) { 'Ruby on Rails Tutorial Sample App' }
 
   describe 'GET #home' do
