@@ -1,8 +1,6 @@
-require "rails_helper"
+require 'rails_helper'
 
-RSpec.describe UsersController, :type => :controller do
-  render_views
-
+describe UsersController, :type => :request do
   describe 'GET #new' do
     it 'returns a 200 custom status code' do
       get signup_path
